@@ -10,7 +10,7 @@ const Support = () => {
     <div className="support">
       <div className="container">
       <h2 className="text-center">{t("question")}</h2>
-      <p className="text-center">{t("questionDescription")}</p>
+      <p style={{ fontSize: 24 }} className="text-center">{t("questionDescription")}</p>
         <div className="row pt-5">
 
           <div className="col-md-6">

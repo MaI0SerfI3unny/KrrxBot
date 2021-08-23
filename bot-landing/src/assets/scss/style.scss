@@ -6,7 +6,7 @@ $null: 0;
 }
 
 h1{font-size: 96px;line-height: 144px;}
-h2{font-size: 64px;font-weight: 600;line-height: 96px;color: #0082F4;}
+h2{font-size: 64px;font-weight: 600;line-height: 70px;color: #0082F4;}
 h3{font-size: 24px;font-weight: 600;line-height: 36px}
 h4{font-size: 18px;font-weight: 600;line-height: 27px}
 
@@ -52,7 +52,7 @@ header{
   display: block !important;
   p{
     padding-top: 11px;
-    display: block ruby;
+    display: inline-flex;
     background: #140A28;
     opacity: 0.85;
     border-top-left-radius: 5px;
@@ -60,6 +60,10 @@ border-top-right-radius: 5px;
 padding: 10px;
 max-width: 62px;
 max-height: 43px;
+svg{
+  margin-top: 8px;
+  margin-left: 4px;
+}
   }
   li{
     background: #140A28;
@@ -105,7 +109,9 @@ max-height: 43px;
 .mobile{
   display: none;
 }
-
+.banner_description{
+font-size: 24px;
+}
 @media (max-width:1000px) {
   .banner{
     width: 100%;
@@ -123,7 +129,7 @@ max-height: 43px;
       display: inline-flex;
     }
     .banner_description{
-      font-size: 21px;
+      font-size: 24px ;
       padding-left: 10px;
       padding-right: 10px;
     }
@@ -292,7 +298,7 @@ background: rgba(68, 173, 255, 0.3);
 //---------------------------------------------------------------------------ABOUT------------------------------------//
 
 .about{
-  padding-top: 460px;
+  padding-top: 350px;
   padding-bottom: 200px;
   h2{
     margin-bottom: 80px;
@@ -346,7 +352,7 @@ color: white;
 
 .about{
   .mobile-panel{
-    margin-right: 12px;
+    margin-right: 32px;
     padding: 0;
   li{
     cursor: pointer;
@@ -402,8 +408,8 @@ color: white;
 .what-new{
   width: 100%;
   background: #E6F4FF;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   .hover_exchange{
     color: #2F3D60;
   }
@@ -454,6 +460,9 @@ color: white;
 }
 }
 .mobileSliderCurrency{
+  .col-md-12{
+    width:90% !important;
+  }
 display: none;
 img{
   margin-bottom: 10px;
@@ -462,9 +471,10 @@ p,
 .percent{
   font-size: 18px !important;
 }
+.slick-slide, .slick-active, .slick-current{width:326px !important}
 }
 .limit-row{
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 
@@ -514,8 +524,8 @@ p,
 //---------------------------------------------------------------------------EXCHANGE------------------------------------//
 
 .exchange{
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 150px;
   p{
     font-size: 36px;
     color: #3D3D3D;
@@ -530,6 +540,8 @@ p,
     width: 217px;
     text-decoration: none;
     padding: 8px;
+    padding-left: 29px;
+    padding-right: 29px;
     height: 47px;
     background: linear-gradient(180deg, #44ADFF 0%, #0082F4 100%);
     box-shadow: 0px 0px 6px 3px rgba(68, 173, 255, 0.32);
@@ -558,8 +570,8 @@ p,
 //---------------------------------------------------------------------------SUPPORT------------------------------------//
 .support{
   width: 100%;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 background: rgba(132, 201, 255, 0.2);
 h2{
   font-size: 42px;
@@ -602,6 +614,9 @@ h2{
 
 
 footer{
+  img{
+    width: 74px;
+  }
   .footer-inline-start,
 .footer-inline,
 .footer-inline-end{
@@ -726,4 +741,26 @@ tbody{
     font-size: 18px;
   }
 }
+}
+.MobileChooserButton{
+   outline: 0 !important;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #E5E5E5;
+  border-radius: 10px;
+}
+
+.about-content-img{
+  width: 245px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  filter: drop-shadow(0px 12px 24px rgba(34, 125, 195, 0.2));
+}
+
+@media (max-width: 600px) {
+  .about-content-img{
+    width: 179px;
+  }
 }

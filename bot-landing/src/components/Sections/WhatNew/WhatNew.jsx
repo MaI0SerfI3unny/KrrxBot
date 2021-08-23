@@ -54,7 +54,7 @@ const WhatNew = () => {
        <div className="col-md-7 align-self-center">
        <div>
          <h3 className="hover_exchange">{t("deposit")}</h3>
-         <p className="description_exchange">{t("depositDescription")}</p>
+         <p style={{ marginBottom: '3rem' }} className="description_exchange">{t("depositDescription")}</p>
          <a href="https://t.me/KRRX_bot" className="button_what_new">{t("open")}</a>
          </div>
        </div>
@@ -64,14 +64,14 @@ const WhatNew = () => {
         </div>
       </div>
 
-      <div className="row limit-row" >
+      <div style={{ marginTop: '3rem' }} className="row limit-row" >
         <div className="col-md-5">
           <img className="img-fluid" src={img} alt="Limit orders" />
         </div>
         <div className="col-md-7">
         <h3 className="hover_exchange">{t("limit")}</h3>
-        <p className="description_exchange">{t("limitDescription")}</p>
-        <a href="https://t.me/KRRX_bot" className="button_what_new">{t("try")}</a>
+        <p style={{ marginBottom: '3rem' }} className="description_exchange">{t("limitDescription")}</p>
+        <a  href="https://t.me/KRRX_bot" className="button_what_new">{t("try")}</a>
         </div>
       </div>
 

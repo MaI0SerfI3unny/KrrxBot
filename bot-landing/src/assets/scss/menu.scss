@@ -67,7 +67,6 @@
   left: -100%;
   z-index: 2;
   width: 300px;
-  height: 60%;
   margin: 0;
   padding: 80px 0;
   list-style: none;
@@ -93,6 +92,7 @@
   .lang{
     display: block;
     p{
+      padding: 0;
       background: transparent;
       color: black;
       width: 53px;
@@ -110,5 +110,17 @@
       border-color: none;
       border-style: none;
     }
+  }
+}
+
+.mobile-button{
+  margin-top:32px;
+  margin-bottom:32px;
+  padding-left: 32px;
+  margin-left: 26px;
+  padding: 10px;
+.button_header{
+    position: relative !important;
+    padding: 12px 88px;
   }
 }

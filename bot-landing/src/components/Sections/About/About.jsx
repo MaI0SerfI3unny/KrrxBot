@@ -25,11 +25,14 @@ const About = () => {
   )
 
   const mobile_slide = slider_content.map(el =>
-    <li key={el.id} onClick={() => chooseSlide(el.id)} style={image === el.img ? {background: "linear-gradient(180deg, #44ADFF 0%, #0081F0 100%), #FFFFFF"} : {}}>
-    <label>
-    <embed type="image/svg+xml" src={el.svg} alt={el.title}/>
-    </label>
-    </li>)
+    <div key={el.id}>
+    <br/>
+    <button  className='MobileChooserButton'
+    style={image === el.img ? { backgroundImage: `url(${el.svg}),linear-gradient(180deg, #44ADFF 0%, #0081F0 100%)`} : {backgroundColor: "transparent", backgroundImage: `url(${el.svg})`}}
+    onClick={() => chooseSlide(el.id)}>
+    </button>
+    </div>
+    )
 
   return(
     <div className="container about">
@@ -43,7 +46,7 @@ const About = () => {
       <ul className="mobile-panel">
       {mobile_slide}
       </ul>
-      <img style={{ width: 245, height: 490, marginBottom: 40 }} src={image === '' ? slider_content[0].img : image} alt='Slide'/>
+      <img className="about-content-img" src={image === '' ? slider_content[0].img : image} alt='Slide'/>
       </div>
     <br/>
     <a className="button_about text-white" href="https://t.me/KRRX_bot">{t('try')}</a>
