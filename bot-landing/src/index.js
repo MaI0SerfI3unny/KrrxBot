@@ -6,11 +6,9 @@ import './assets/scss/style.scss';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
   <Suspense fallback={(<div>Load</div>)}>
     <App />
-    </Suspense>
-  </React.StrictMode>,
+    </Suspense>,
   document.getElementById('root')
 );
 

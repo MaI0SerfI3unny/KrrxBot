@@ -1,0 +1,31 @@
+
+.arrow_btn_calculator_container {
+  margin: 0 auto;
+  border: none;
+  background-color: transparent;
+  //margin: 15px auto;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: 1280px) {
+    margin: -10px auto;
+  }
+}
+
+.MuiList-root{
+  display: contents;
+}
+.calc__wrapper{
+  margin-top: 100px;
+}
+
+@media (max-width:600px) {
+  .calc__wrapper{
+    margin-top: 0;
+  }
+  .makeStyles-root-1{
+    width: 200px !important;
+  }
+}

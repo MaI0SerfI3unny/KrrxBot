@@ -157,9 +157,46 @@ slides :[
       description: 'whatAuto',
       img: phone5RU,
       svg: autoMobile,
-      
+
     }
-  ]
+  ],
+  tr:[
+    {
+      id: 1,
+      title: 'wallet',
+      description: 'whatWallet',
+      img: phone1EN,
+      svg: walletMobile,
+    },
+    {
+      id: 2,
+      title: 'exchange',
+      description: 'whatExchange',
+      img: phone2EN,
+      svg: exchangeMobile,
+    },
+    {
+      id: 3,
+      title: 'storage',
+      description: 'whatSafe',
+      img: phone3EN,
+      svg: safeMobile,
+    },
+    {
+      id: 4,
+      title: 'aml',
+      description: 'whatAml',
+      img: phone4EN,
+      svg: amlMobile,
+    },
+    {
+      id: 5,
+      title: 'auto',
+      description: 'whatAuto',
+      img: phone5EN,
+      svg: autoMobile,
+    }
+  ],
 }
 ],
 dataCommision : [

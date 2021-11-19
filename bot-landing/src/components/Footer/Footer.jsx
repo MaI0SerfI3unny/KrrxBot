@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './../../assets/img/logo.png'
+import logo from './../../assets/img/Footer_green.svg'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="container">
     <div className="row">
     <div className="col-md-2">
-    <img src={logo} alt="Krrx bot logo"/>
+    <img src={logo} style={{marginTop: 10}} alt="Krrx bot logo"/>
     </div>
     <div className="col-md-3 pt-2">
         <div className="footer-inline-start">

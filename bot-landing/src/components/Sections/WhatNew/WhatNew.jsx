@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../../../assets/img/new-limit.png'
+import img from '../../../assets/img/new-limit-green.png'
 import { useTranslation } from 'react-i18next'
 import storage from './../../../storage/redux.js'
 import Slider from "react-slick"
@@ -74,7 +74,6 @@ const WhatNew = () => {
         <a  href="https://t.me/KRRX_bot" className="button_what_new">{t("try")}</a>
         </div>
       </div>
-
     </div>
     </div>
   )

@@ -1,5 +1,5 @@
 {
-    "functional":  "Functional",
+    "functional":  "Functionality",
     "limit" : "Limit orders",
     "deposit" : "Deposit program",
     "faq" : "Help",
@@ -9,7 +9,7 @@
     "aml" : "AML compliance",
     "amlDescription": "Ability to check any address for AML (anti-money laundering) risks",
     "commision" : "Low fees",
-    "commisionDescription" : "0.1% for cryptocurrency exchange from 0% for deposit/withdrawal",
+    "commisionDescription" : "From 0% for deposit/withdrawal<br/> 0.1% for cryptocurrency exchange",
     "assets" : "Popular assets",
     "assetsDescription" : "KRRX supports BTC, ETH, LTC, USDT (ERC-20, TRC-20), XRP, TRX",
     "liquidity" : "High liquidity",
@@ -37,5 +37,12 @@
     "whatAml":"You will be able to check addresses for AML risk, as well as get a report with a division into risk groups. ",
     "whatAuto": "Set up autoconversion and receive cryptocurrency that you need",
     "commision" : "Commissions",
-    "term" : "Terms of use "
+    "term" : "Terms of use ",
+    "buyTitle" : "Get",
+    "sellTitle": "Give",
+    "fiatLabel": "Fiat",
+    "cryptaLabel": "Cryptocurrency",
+    "calculatorError5" : "Minimum amount",
+    "loadError": "Load error pease restart or try later"
+
 }

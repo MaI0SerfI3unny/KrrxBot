@@ -4,7 +4,7 @@ import {Link} from 'react-scroll';
 const NavLink = (props) => {
   const {t} = props
   return(
-    <ul>
+    <ul style={{marginBottom:0}}>
     <li>
     <Link
     activeClass = "active"

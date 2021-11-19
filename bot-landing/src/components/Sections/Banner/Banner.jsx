@@ -18,7 +18,7 @@ const Banner = () => {
      <div className="mobileCard text-center">
      <img src={el.link} alt={t(el.title)}/>
      <h4 className="mt-2">{t(el.title)}</h4>
-     <p className="pl-3 pr-3">{t(el.description)}</p>
+     <p className="pl-3 pr-3" dangerouslySetInnerHTML={{__html: t(el.description)}}></p>
      </div>
    </div>
    )
@@ -28,7 +28,7 @@ const Banner = () => {
       <div className="card-banner">
       <img src={el.link} alt={t(el.title)}/>
       <h4 className="mt-2">{t(el.title)}</h4>
-      <p className="pl-3 pr-3">{t(el.description)}</p>
+      <p className="pl-3 pr-3" dangerouslySetInnerHTML={{__html: t(el.description)}}></p>
       </div>
     </div>)
   return(

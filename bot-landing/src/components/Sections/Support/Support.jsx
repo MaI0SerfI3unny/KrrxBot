@@ -1,5 +1,5 @@
 import React from 'react'
-import quess from '../../../assets/img/quess.png'
+import quess from '../../../assets/img/quess-green.svg'
 import telegram from '../../../assets/img/svg/telegram.svg'
 import { useTranslation } from 'react-i18next'
 
