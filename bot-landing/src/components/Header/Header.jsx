@@ -25,7 +25,7 @@ const Header = () => {
         <div className="text-center">
         <img src={logoGreen} alt="Krx Bot Black Logo"/>
         </div>
-        <NavLink t={t}/>
+        <NavLink t={t} setState={setState}/>
         <div className='mobile-button'>
         <a style={{float:'left', marginBottom: 15}} className="text-white button_header" href="https://t.me/KRRX_bot">{t("start")}</a>
         </div>

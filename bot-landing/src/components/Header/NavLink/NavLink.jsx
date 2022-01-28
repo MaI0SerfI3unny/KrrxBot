@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-scroll';
 
 const NavLink = (props) => {
-  const {t} = props
+  const {t,setState} = props
   return(
     <ul style={{marginBottom:0}}>
     <li>
@@ -12,6 +12,7 @@ const NavLink = (props) => {
     spy={true}
     smooth={true}
     offset={70}
+    onClick={() => setState(false)}
     duration={500}>{t("functional")}</Link>
     </li>
     <li>
@@ -21,6 +22,7 @@ const NavLink = (props) => {
     spy={true}
     smooth={true}
     offset={70}
+    onClick={() => setState(false)}
     duration={500}>{t("limit")}</Link>
     </li>
     <li>
@@ -30,6 +32,7 @@ const NavLink = (props) => {
     spy={true}
     smooth={true}
     offset={70}
+    onClick={() => setState(false)}
     duration={500}>{t("deposit")}</Link>
     </li>
     <li>
@@ -39,6 +42,7 @@ const NavLink = (props) => {
     spy={true}
     smooth={true}
     offset={70}
+    onClick={() => setState(false)}
     duration={500}>{t("faq")}</Link>
     </li>
     </ul>

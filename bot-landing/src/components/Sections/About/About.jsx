@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import storage from './../../../storage/redux.js'
 import {QueryClient, QueryClientProvider} from 'react-query'
 import Calculator from "../../Calculator/Calculator";
+import AboutItemDesc from './AboutItemDesc/AboutItemDesc.jsx'
 
 const About = () => {
   const { t, i18n } = useTranslation();
@@ -13,20 +14,13 @@ const About = () => {
   const queryClient = new QueryClient()
 
   const chooseSlide = (id) => {
-
      const findPath = slider_content.filter(el => el.id === id);
      setContent([findPath[0].title, findPath[0].description]);
     setImage(findPath[0].img);
   }
 
   const container_slide = slider_content.map(el =>
-    <label key={el.id} style={{display:'block'}} onClick={() => chooseSlide(el.id)}>
-    <div style={image === el.img ? {border: '1px solid #009D32'}: {}}  className="col-md-12  mb-3 container-about">
-      <h3 style={image === el.img ? {color: '#009D32'}: { color: '#3D3D3D'}}>{t(el.title)}</h3>
-      <label className='align-self-center status'><p>{ image === el.img ? '-' : '+' }</p></label>
-      <p style={image === el.img ? {display: 'block'}:{display: 'none'}}>{t(el.description)}</p>
-    </div>
-    </label>
+    <AboutItemDesc el={el} image={image} t={t} chooseSlide={chooseSlide}/>
   )
 
   const mobile_slide = slider_content.map(el =>
@@ -57,8 +51,7 @@ const About = () => {
       <Calculator />
       </QueryClientProvider>
         :
-       <img className="about-content-img" src={image === '' ? slider_content[0].img : image} alt='Slide'/>
-        }
+       <img className="about-content-img" src={image === '' ? slider_content[0].img : image} alt='Slide'/>}
 
 
       </div>
