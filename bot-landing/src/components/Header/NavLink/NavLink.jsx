@@ -3,6 +3,11 @@ import {Link} from 'react-scroll';
 
 const NavLink = (props) => {
   const {t,setState} = props
+  const scroll = () => {
+    if (setState !== undefined) {
+      setState(false)
+    }
+  }
   return(
     <ul style={{marginBottom:0}}>
     <li>
@@ -12,7 +17,7 @@ const NavLink = (props) => {
     spy={true}
     smooth={true}
     offset={70}
-    onClick={() => setState(false)}
+    onClick={() => scroll()}
     duration={500}>{t("functional")}</Link>
     </li>
     <li>
@@ -22,7 +27,7 @@ const NavLink = (props) => {
     spy={true}
     smooth={true}
     offset={70}
-    onClick={() => setState(false)}
+    onClick={() => scroll()}
     duration={500}>{t("limit")}</Link>
     </li>
     <li>
@@ -32,7 +37,7 @@ const NavLink = (props) => {
     spy={true}
     smooth={true}
     offset={70}
-    onClick={() => setState(false)}
+    onClick={() => scroll()}
     duration={500}>{t("deposit")}</Link>
     </li>
     <li>
@@ -42,7 +47,7 @@ const NavLink = (props) => {
     spy={true}
     smooth={true}
     offset={70}
-    onClick={() => setState(false)}
+    onClick={() => scroll()}
     duration={500}>{t("faq")}</Link>
     </li>
     </ul>
