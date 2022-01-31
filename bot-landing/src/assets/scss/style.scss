@@ -502,7 +502,7 @@ p,
 .percent{
   font-size: 18px !important;
 }
-.slick-slide, .slick-active, .slick-current{width:300px !important}
+//.slick-slide, .slick-active, .slick-current{width:300px !important}
 }
 .limit-row{
   padding-top: 100px;
@@ -801,4 +801,16 @@ tbody{
     width: 179px;
     height: 380px;
   }
+}
+
+.scrollContainer{
+  background: #009D32;
+  position: fixed;
+  padding: 14px;
+  bottom: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid white;
+  right: 70px;
+  z-index: 9;
 }
