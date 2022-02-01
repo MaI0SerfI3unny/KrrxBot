@@ -17,17 +17,17 @@ const Header = () => {
     <header>
     <div className="container" style={{paddingTop:18,paddingBottom: 18}}>
     <div className="hamburger-menu">
-        <label className="menu__btn" htmlFor="menu__toggle" onClick={() => state? setState(false): setState(true)}>
-          <span className={!state? "span": 'checkedspan'}></span>
+        <label className="menu__btn" htmlFor="menu__toggle" onClick={() => setState(!state)}>
+          <span  className={!state? "span": 'checkedspan'}></span>
         </label>
 
         <ul className="menu__box" style={state ? {left: 0, visibility: 'visible'} : {left: '-100%',visibility: 'hidden' }}>
-        <div className="text-center">
-        <img src={logoGreen} alt="Krx Bot Black Logo"/>
-        </div>
+          <div className="text-center">
+            <img src={logoGreen} alt="Krx Bot Black Logo"/>
+          </div>
         <NavLink t={t} setState={setState}/>
         <div className='mobile-button'>
-        <a style={{float:'left', marginBottom: 15}} className="text-white button_header" href="https://t.me/KRRX_bot">{t("start")}</a>
+          <a style={{float:'left', marginBottom: 15}} className="text-white button_header" href="https://t.me/KRRX_bot">{t("start")}</a>
         </div>
 
         <LangSwitch

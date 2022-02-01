@@ -220,15 +220,15 @@ font-size: 24px;
   background: rgba(68, 173, 255, 0.3);
     border-radius: 5px;
   }
-  &:hover{
-    transition: 0.3s;
-    color: white;
-    background: linear-gradient(180deg, #44ADFF 0%, #0081F0 100%);
-    &:hover img{
-      background: white;
-      border-radius: 5px;
-    }
-}
+//  &:hover{
+//    transition: 0.3s;
+//    color: white;
+//    background: linear-gradient(180deg, #44ADFF 0%, #0081F0 100%);
+//    &:hover img{
+//      background: white;
+//      border-radius: 5px;
+//    }
+//}
 }
 @media (min-width:501px) {
   .banner{
@@ -807,10 +807,10 @@ tbody{
   background: #009D32;
   position: fixed;
   padding: 14px;
-  bottom: 70px;
+  bottom: 10px;
   border-radius: 10px;
   cursor: pointer;
   border: 1px solid white;
-  right: 70px;
-  z-index: 9;
+  right: 10px;
+  z-index: 1;
 }
